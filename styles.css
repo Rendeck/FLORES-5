@@ -238,3 +238,46 @@ h2:hover::after {
 h2:hover {
     color: #28a745;
 }
+
+
+.gallery img {
+    transition: transform 0.3s ease-in-out;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+.team-member {
+    transition: transform 0.3s ease-in-out;
+}
+.team-member:hover {
+    transform: translateY(-10px);
+}
+/* Asegurar que el footer quede al fondo */
+html, body {
+    height: 100%;  /* Asegurarse de que el HTML y el BODY ocupen toda la altura de la pantalla */
+    margin: 0;  /* Eliminar márgenes predeterminados */
+}
+
+body {
+    display: flex;
+    flex-direction: column;  /* Coloca el contenido en una columna */
+}
+
+.main-content {
+    flex: 1;  /* Permite que el contenido principal ocupe todo el espacio disponible */
+}
+
+
+.float-wa{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+}
